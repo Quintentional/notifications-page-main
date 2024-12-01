@@ -5,123 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Notifications page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="layout">
       <div id="header">
-        <h1 id="notifications">Notifications <span id="three">3</span></h1>
-
+        <h1>Notifications <span id="three">3</span></h1>
         <p id="read">Mark all as read</p>
-
-        <div id="mark">
-          <img src="./assets/images/avatar-mark-webber.webp" alt="" />
-          <div id="mark-content">
-            <div class="event mark-event">
-              <p id="mark-p">
-                <span class="name">Mark Webber</span> reacted to your recent
-                post <span class="post">My first tournament today!</span>
-              </p>
-              <div class="unread"></div>
-            </div>
-            <div class="when">1m ago</div>
-          </div>
-        </div>
-
-        <div id="angela">
-          <img src="./assets/images/avatar-angela-gray.webp.webp" alt="" />
-          <div id="angela-content">
-            <div class="event angela-event">
-              <p id="angela-p">
-                <span class="name">Angela Gray</span> followed you
-              </p>
-              <div class="unread"></div>
-            </div>
-            <div class="when">5m ago</div>
-          </div>
-        </div>
-
-        <div id="jacob">
-          <img src="./assets/images/avatar-jacob-thompson.webp" alt=""/>
-          <div id="jacob-content">
-            <div class="event jacob-event">
-              <p id="jacob-p">
-                <span class="name">Jacob Thompson</span> has joined your group
-                <span class="group">Chess Club</span>
-              </p>
-              <div class="unread"></div>
-            </div>
-            <div class="when">1 day ago</div>
-          </div>
-        </div>
-
-        <div id="rizky">
-          <img
-            src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
-          <div id="rizky-content">
-            <div class="event rizky-event">
-              <p id="rizky-p">
-                <span class="name">Rizky Hasanuddin</span> sent you a private
-                message
-              </p>
-            </div>
-            <div class="when">5 days ago</div>
-            <div id="rizky-message">
-              Hello, thanks for setting up the Chess Club. I've been a member
-              for a few weeks now and I'm already having lots of fun and
-              improving my game.
-            </div>
-          </div>
-        </div>
-
-
-        <div id="kimberly">
-          <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
-          <div id="kimberly-content">
-            <div class="event kimberly-event">
-<div id="kimberly-left">
-  <p id="kimberly-p">
-    <span class="name">Kimberly Smith</span> commented on your picture
-  </p>
-</div>
-<div class="when">1 week ago</div>
-</div>
-<img src="./assets/images/image-chess.webp" alt="">
-          </div>
-        </div>
-
-        <div id="nathan">
-          <img src="./assets/images/avatar-mark-webber.webp" alt="" />
-          <div id="nathan-content">
-            <div class="event nathan-event">
-              <p id="nathan-p">
-                <span class="name">Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win
-                  rate </span>
-              </p>
-            </div>
-            <div class="when">2 weeks ago</div>
-          </div>
-        </div>
-       
-        
-        <div id="anna">
-          <img src="./assets/images/avatar-anna-kim.webp" alt=""/>
-          <div id="anna-content">
-            <div class="event anna-event">
-              <p id="anna-p">
-                <span class="name">Anna Kim</span> left the group
-                <span class="group">Chess Club</span>
-              </p>
-            </div>
-            <div class="when">2 weeks ago</div>
-          </div>
-        </div>
-        
-         
-        
-          
-    
       </div>
 
+      <div id="mark" class="notification unread-background">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="" />
+        <div id="mark-content">
+          <div class="event mark-event">
+            <p id="mark-p">
+              <span class="name">Mark Webber</span> reacted to your recent post
+              <span class="post">My first tournament today!</span>
+            </p>
+            <div class="unread"></div>
+          </div>
+          <div class="when">1m ago</div>
+        </div>
+      </div>
+
+      <div id="angela" class="notification unread-background">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="" />
+        <div id="angela-content">
+          <div class="event angela-event">
+            <p id="angela-p">
+              <span class="name">Angela Gray</span> followed you
+            </p>
+            <div class="unread"></div>
+          </div>
+          <div class="when">5m ago</div>
+        </div>
+      </div>
+
+      <div id="jacob" class="notification unread-background">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+        <div id="jacob-content">
+          <div class="event jacob-event">
+            <p id="jacob-p">
+              <span class="name">Jacob Thompson</span> has joined your group
+              <span class="group">Chess Club</span>
+            </p>
+            <div class="unread"></div>
+          </div>
+          <div class="when">1 day ago</div>
+        </div>
+      </div>
+
+      <div id="rizky" class="notification">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+        <div id="rizky-content">
+          <div class="event rizky-event">
+            <p id="rizky-p">
+              <span class="name">Rizky Hasanuddin</span> sent you a private
+              message
+            </p>
+          </div>
+          <div class="when">5 days ago</div>
+          <div id="rizky-message">
+            <p>Hello, thanks for setting up the Chess Club. I've been a member for
+              a few weeks now and I'm already having lots of fun and improving my
+              game.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="kimberly" class="notification">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+        <div id="kimberly-content">
+          <div class="event kimberly-event">
+            <div id="kimberly-left">
+              <p id="kimberly-p">
+                <span class="name">Kimberly Smith</span> commented on your
+                picture
+              </p>
+            </div>
+            <div class="when">1 week ago</div>
+          </div>
+          <img id="chess-img" src="./assets/images/image-chess.webp" alt="" />
+        </div>
+      </div>
+
+      <div id="nathan" class="notification">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+        <div id="nathan-content">
+          <div class="event nathan-event">
+            <p id="nathan-p">
+              <span class="name">Nathan Peterson</span> reacted to your recent
+              post
+              <span class="post"
+                >5 end-game strategies to increase your win rate
+              </span>
+            </p>
+          </div>
+          <div class="when">2 weeks ago</div>
+        </div>
+      </div>
+
+      <div id="anna" class="notification">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="" />
+        <div id="anna-content">
+          <div class="event anna-event">
+            <p id="anna-p">
+              <span class="name">Anna Kim</span> left the group
+              <span class="group">Chess Club</span>
+            </p>
+          </div>
+          <div class="when">2 weeks ago</div>
+        </div>
+      </div>
+      
     </div>
     <script src="index.js"></script>
   </body>
