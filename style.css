@@ -36,7 +36,7 @@ h1 {
     font-weight: 800;
 }
 
-#three {
+#notification-number {
     background-color: hsl(219, 85%, 26%);
     color: hsl(0, 0%, 100%);
     font-size: 16px;
@@ -181,7 +181,7 @@ span {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 2rem 1rem;
+        margin: 1.5rem 1rem;
     }
     
     h1 {
@@ -189,7 +189,7 @@ span {
         font-weight: 800;
     }
     
-    #three {
+    #notification-number {
         background-color: hsl(219, 85%, 26%);
         color: hsl(0, 0%, 100%);
         font-size: 16px;
